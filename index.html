@@ -1,565 +1,283 @@
-<!DOCTYPE html>
-<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--><html lang="en" class="ie ie9"> <!--<![endif]-->
-<head>
-    <meta content="text/html; charset=utf-8" http-equiv="content-type"/>
-    <meta name="description" content=""/>
-    <meta name="keywords" content=""/>
-    
-    <!-- Mobile Specific Metas
-    +++++++++++++++++++++++++++ -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <link rel="shortcut icon" href="img/favicon.ico">
-    <title>YellowProject - HTML5&amp;CSS3 business theme</title>
-    
-    <!-- Styles
-    +++++++++++++ -->	
-<!--	<link href='http://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>-->
- <!--   <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>-->
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.css">
+﻿<!DOCTYPE html>
+<!-- adding more comment -->
+<!-- testing -->
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<!-- This is what I added second time-->
+<!-- panappqa add test comments here -->
+<!-- test comment -->
+<!-- another comment -->
 
-    <link rel="stylesheet" type="text/css" href="css/theme.css">
-    <link rel="stylesheet" href="css/Alef-Webfont/stylesheet.css" type="text/css" charset="utf-8" />
-    <link rel="stylesheet" type="text/css" href="css/adds.css">
-	<!--<link rel="stylesheet" type="text/css" href="css/colors/color-default.css" id="theme_color">-->
-	
-    
-    <!-- Scripts
-    +++++++++++++ -->
-	<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
-    <script src="http://code.jquery.com/ui/1.8.2/jquery-ui.js" type="text/javascript"></script>
-    <script type="text/javascript" src="js/jquery.onebyone.min.js" ></script>
-    <script type="text/javascript" src="js/theme.js"></script>
-    <!-- Demo Panel -->
-	<script type="text/javascript" src="js/color_panel.js"></script>
+<html lang="en">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8"><!-- Set the viewport width to device width for mobile -->
+    <meta name="viewport" content="width=device-width">
+
+    <title>Favorite Quotes from Bitbuckians</title><!-- Included CSS Files -->
+    <link rel="stylesheet" href="stylesheets/foundation.css" type="text/css">
+    <link rel="stylesheet" href="stylesheets/app.css" type="text/css"><!--[if lt IE 9]>
+                <link rel="stylesheet" href="stylesheets/ie.css">
+        <![endif]-->
+    <!-- IE Fix for HTML5 Tags -->
+    <!--[if lt IE 9]>
+                <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+
+    <style type="text/css">
+    td img
+        {
+            border: 1px solid #CCCCCC;
+            box-shadow: 3px 3px 3px #888888;
+            padding: 1em;
+        }
+    </style>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
 </head>
 
 <body>
-	<!-- H E A D E R -->
-	<header>
-        <div class="header_wrapper container">
-            <a href="index-2.html" class="logo"><img src="img/logo.png" alt=""  width="222" height="43" class="logo_def"><img src="img/retina/logo.png" alt="" width="222" height="43" class="logo_retina"></a>
-            <div class="slogan">
-	            <div class="img_block">
-	            <span>ערוך פרופיל</span>
-			    	<div class="profile">
-			    		<img src="img/pictures/tomer.jpg" class="img-rounded">
-			    		
-			    	</div>
-			    </div>
-		    </div>
-            <nav>
-                <ul class="menu">                   
-                    <li><a href="about.html">תיאור תפקידים</a></li>
-                    <li><a href="javascript:void(0)">שאלות מראיונות</a>
-                        <ul class="sub-menu">   
-                            <li><a href="typography.html">Typography</a></li>
-                            <li><a href="shortcodes.html">Shortcodes</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="javascript:void(0)">משכורות</a>
-                        <ul class="sub-menu">
-                            <li><a href="portfolio1.html">1 Column</a></li>
-                            <li><a href="portfolio2.html">2 Columns</a></li>
-                            <li><a href="portfolio3.html">3 Columns</a></li>
-                            <li><a href="portfolio4.html">4 Columns</a></li>
-                            <li><a href="portfolio_post.html">Portfolio post</a></li>
-                        </ul>
-                    </li>
-                    
-                    <li><a href="javascript:void(0)">משרות</a>
-                        <ul class="sub-menu">
-                            <li><a href="contact_full.html">Full width</a></li>
-                            <li><a href="contact_sidebar.html">With sidebar</a></li>
-                        </ul>
-                    </li> 
-                    <li><a href="javascript:void(0)">חברות</a>
-                        <ul class="sub-menu">
-                            <li><a href="blog_full.html">Full width</a></li>
-                            <li><a href="blogpost_full.html">Blog post</a></li>
-                            <li><a href="javascript:void(0)">With sidebar</a>
-                                <ul class="sub-menu">
-                                    <li><a href="blog_left.html">Left sidebar</a></li>
-                                    <li><a href="blog_right.html">Right sidebar</a></li>
-                                    <li><a href="blogpost_sidebar.html">Blog post</a></li>
-                                </ul>
-                          </li>
-                        </ul>
-                    </li>
-                    <li class="current-menu-parent"><a href="javascript:void(0)">דף הבית</a>
-                        <ul class="sub-menu">
-                            <li class="current-menu-item"><a href="index-2.html">Layout1</a></li>
-                            <li><a href="home2.html">Layout2</a></li>
-                            <li><a href="home3.html">Layout3</a></li>
-                        </ul>
-                    </li>               
-                </ul><!-- .menu -->
-            </nav>
-            <nav class="mobile_header">
-                <select id="mobile_select"></select>
-            </nav>
-        </div><!-- .header_wrapper -->
-      <div class="clear"></div>
-	</header>
-    <!-- C O N T E N T -->
-    <div class="content_wrapper">
-    	<div class="container">
-            <div class="content_block left-sidebar row">
-                <div class="left-sidebar-block span3">
-                    <aside class="sidebar">
-                    	<div class="sidepanel widget_profile marginbottom10">
-                            <div class="team_slider no_buttons">
-                               <div class="carouselslider teamslider items1" data-count="1">
-		                            <ul class="item_list">
-		                               <li>
-		                                   <div class="item">		                                   			                                      	                           	                                       
-		                                      
-		                                       
-		                                       <div class="carousel_desc">                                                
-		                                           <div class="exc">מצב פרופיל : בלתי מוגבל לעוד 3 ימים </div>
-			                                           <table class="table margin-none">
-			                                           	<tr>
-			                                           		<td class="padding-right3">עשו לייק 
-			                                           		<div class="smallproflinks"><a href="some%20facebook.html" class="facebook" title="Facebook"></a> </div>
-			                                           		</td>
-			                                           		<td> הוסף ביקורת 
-			                                           		<div class="smallproflinks"><a href="add_review.html" class="add-review" title="הוסף ביקורת"></a> </div>
-			                                           		</td>
-			                                           		<td> הוסף משכורת
-			                                           		<div class="smallproflinks"><a href="add_salary" class="add-salary" title="הוסף משכורת"></a> </div>
-			                                           		</td>
-			                                           		<td> הוסף שאלה
-			                                           		<div class="smallproflinks"><a href="add_salary" class="add-question" title="הוסף משכורת"></a> </div>
-			                                           		</td>
-			                                           		
-			                                           	</tr>	
-			                                           	<tr >
-			                                           		<td colspan="4" class="user_rank"><span>דירוגך באתר </span>  
-			                                           		<p>  150 נקודות  </p>
-			                                           		
-			                                           		</td>
-			                                           		
-			                                           		
-			                                           	</tr>	
-			                                           </table>
-			                                                  		  
-		                                       </div>
-		                                   </div>
-		                               </li>
-		                           	</ul>
-		                       </div>
-		                  	</div>
-                        </div><!-- .widget_twitter -->
-                        <div class="sidepanel widget_posts">
-                            <h4 class="sidebar_header">משרות שיכולות לעניין אותך</h4>
-                            <ul class="recent_posts">
-                                <li>
-                                    <div class="recent_posts_content">
-                                        <span class="post_date">  25 לאפריל 2013 </span>
-                                        <div class="side_jobs_title">מנהל צוות וריפיקציה בחברת סטארט אפ</div>
-                                        <div class="side_jobs_company">Apple - </div>
-                                        <div class="side_jobs_area">הרצליה</div>
-                                        <div class="side_jobs_desc">דרוש מנהל צוות עם 3 שנות נסיון לחברה מבטיחה. דרוש ידע ב VLSI, PHP. יתרון בנסיון קודם</div>
-                                        <span class="read_more"><a href="#">פרטים נוספים...</a></span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="recent_posts_content">
-                                        <span class="post_date">  25 לאפריל 2013 </span>
-                                        <div class="side_jobs_title">מתכנת PHP</div>
-                                        <div class="side_jobs_company">Logitec - </div>
-                                        <div class="side_jobs_area">נתניה</div>
-                                        <div class="side_jobs_desc">דרוש מתכנת, אין חובה בנסיון לחברת סטארטאפ בצמיחה JAVA, PHP. יתרון בנסיון קודם</div>
-                                        <span class="read_more"><a href="#">פרטים נוספים...</a></span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="recent_posts_content">
-                                        <span class="post_date">  25 לאפריל 2013 </span>
-                                        <div class="side_jobs_title">Real Time Programer</div>
-                                        <div class="side_jobs_company">Intel - </div>
-                                        <div class="side_jobs_area">תל אביב</div>
-                                        <div class="side_jobs_desc">מתכנת RT. חובה נסיון מוקדם ב C או C++</div>
-                                        <span class="read_more"><a href="#">פרטים נוספים...</a></span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="recent_posts_content">
-                                        <span class="post_date">  25 לאפריל 2013 </span>
-                                        <div class="side_jobs_title">Verification Engineer</div>
-                                        <div class="side_jobs_company">Mellanox - </div>
-                                        <div class="side_jobs_area">יוקנעם</div>
-                                        <div class="side_jobs_desc">דרוש מהנדס וריפיקציה 0-2 שנות נסיון. בוגר תואר בהנדסת חשמל ממוסד מוכר. יתרון למצטיינים</div>
-                                        <span class="read_more"><a href="#">פרטים נוספים...</a></span>
-                                    </div>
-                                </li>
-                                
-                            </ul>
-                        </div><!-- .sidepanel -->
-                        
-                    </aside>
-                </div><!-- .right-sidebar -->
-                <div class="fl-container span9">
-                	<div class="row">
-                        <div class="posts-block span9">
-                            <div class="contentarea">
-                                <div class="row-fluid">
-                                    <div class="span12 module_cont module_layer_slider">
-                                        <div class="module_content slider_type1">
-                                            <div id="banner1" class="OneByOne_container">                                                                                                            
-                                                <div class="oneByOne_item ls_bg2">
-                                                  <form class="subscribe" name="subscribe" method="post" action="#" data-animate="fadeInRight">
-                                                         <h2> מה אתה מחפש היום? </h2> 
-                                                        <div class="inline inline_long"><input type="text" name="field-name" placeholder="חפש חברות, תפקידים, או כל מילת מפתח..." class="subscribe_field"><i class="icon-search icon-white"></i></input></div>
-                                                        <div class="inline inline_short"><input type="submit" name="submit" class="btn_subscribe" id="btn_subscribe" value="חפש!"></div>
-                                                    	<h4>BeTheOne הוא אתר שנועד לעזור לך להגיע מוכן לראיון עבודה. האתר בנוי על שיתוף, אז שתפו.</h4>
-                                                    	<div style="width:570px;">
-                                                    	<h6 class="floatr marginbottom0 marginl5">החיפושים האחרונים שלך:</h6>
-                                                    	<span class="label label-inverse trans">PHP</span>
-                                                    	<span class="label label-inverse trans">Facebook</span>
-                                                    	
-                                                    	 </div>
-                                                    </form>
-                                                </div>                                                                                              
-                                            </div>
-                                        </div> 
-										<script type="text/javascript">
-                                           $(window).load(function(){
-                                                $('#banner1').oneByOne({
-                                                    className: 'oneByOne1',
-                                                    easeType: 'random',
-                                                    responsive: true,
-                                                    enableDrag: false,
-                                                    width: 870,
-                                                    height:389,
-                                                    minWidth: 300,
-                                                    slideShow: false,  
-                                                    slideShowDelay: 5000
-                                                });  
-                                            }); 
-                                        </script>
-                                    </div>
-                                </div><!-- .row-fluid -->
-                                 <div class="row-fluid">
-                                    <div class="span12 module_cont module_feature_posts">
-                                        <h4 class="headInModule home_icon">פריטים חדשים </h4>
-                                        <div class="featured_slider  no_buttons">
-                                            <div class="carouselslider featured_posts items4" data-count="4">
-                                                <ul class="item_list">
-                                                    <li>
-                                                        <div class="item">
-                                                           
-                                                            <div class="carousel_title">
-                                                                <h4 class="featured_ico_video"><a href="#">ביקרות על חברת Apple</a></h4>
-                                                            </div>
-                                                            <div class="carousel_desc">                                                
-                                                                <div class="exc"> הועלה ע"י תומר (דירוג 152)</div>
-                                                                 <span class="post_date">  עלה בתאריך  25/4/2013</span>
-                                                            </div>
-                                                        </div>
-                                                    </li>                                          
-                                                    <li>
-                                                        <div class="item">
-                                                          
-                                                            <div class="carousel_title">
-                                                                 <h4 class="featured_ico_video"><a href="#">משכורת מתכנת PHP</a></h4>
-                                                            </div>
-                                                            <div class="carousel_desc">                                                
-                                                               <div class="exc"> הועלה ע"י תומר (דירוג 152)</div>
-                                                                 <span class="post_date">  עלה בתאריך  25/4/2013</span>
-                                                            </div>
-                                                        </div>
-                                                    </li>  
-                                                    <li>
-                                                        <div class="item">
-                                                          
-                                                            <div class="carousel_title">
-                                                                 <h4 class="featured_ico_video"><a href="#">שאלה מראיון בחברת Marvell</a></h4>
-                                                            </div>
-                                                            <div class="carousel_desc">                                                
-                                                              <div class="exc"> הועלה ע"י תומר (דירוג 152)</div>
-                                                                 <span class="post_date">  עלה בתאריך  25/4/2013</span>
-                                                            </div>
-                                                        </div>
-                                                    </li>  
-                                                    <li>
-                                                        <div class="item">
-                                                          
-                                                            <div class="carousel_title">
-                                                                <h4 class="featured_ico_video"><a href="#">תיאור תפקיד מהנדס וריפיקציה  </a></h4>
-                                                            </div>
-                                                            <div class="carousel_desc">                                                
-                                                               <div class="exc"> הועלה ע"י תומר (דירוג 152)</div>
-                                                                 <span class="post_date">  עלה בתאריך  25/4/2013</span>
-                                                            </div>
-                                                        </div>
-                                                    </li>  
-                                                                                             
-                                                </ul>                        
-                                            </div>
-                                            <div class="clear"></div>
-                                        </div><!-- .featured_slider -->
-                                    </div><!-- .module_cont -->
-                                </div><!-- .row-fluid -->
-                                <div class="row-fluid">
-                                    <div class="span12 module_cont module_feature_posts">
-                                        <h4 class="headInModule home_icon"> מובילי השבוע </h4>
-                                        <div class="  no_buttons">
-                                            <div class="carouselslider  items4" data-count="4">
-                                                 <ul class="item_list">                                                                                       
-                                                    <li>
-                                                        <div class="item"> 
-                                                        <a href="#" class="shortcode_button btn_normal btn_type1">תומר - 152 נקודות</a>    
-                                                                                                           
-                                                                                                                  
-                                                        </div>                                                      
-                                                    </li>  
-                                                    <li>
-                                                        <div class="item">
-                                                           
-                                                            <a href="#" class="shortcode_button btn_normal btn_type1">יותם - 172 נקודות</a> 
-                                                                 
-                                                         
-                                                        </div>
-                                                    </li>  
-                                                    <li>
-                                                        <div class="item">
-                                                           
-                                                            <a href="#" class="shortcode_button btn_normal btn_type1">רונן - 152 נקודות</a> 
-                                                                
-                                                        </div>
-                                                    </li> 
-                                                     <li>
-                                                        <div class="item">
-                                                           
-                                                            <a href="#" class="shortcode_button btn_normal btn_type1">דנה - 132 נקודות</a> 
-                                                               
-                                                        </div>
-                                                    </li>                                        
-                                                </ul>                    
-                                            </div>
-                                            <div class="clear"></div>
-                                        </div><!-- .featured_slider -->
-                                    </div><!-- .module_cont -->
-                                </div><!-- .row-fluid -->    
-                                 <div class="row-fluid">
-                                    <div class="span12 module_cont module_feature_posts">
-                                        <h4 class="headInModule home_icon margin-none">חברות מובילות</h4>
-                                        <div class="featured_slider no_buttons">
-                                            <div class="carouselslider featured_posts items4" data-count="4">
-                                                <ul class="item_list">
-                                                    <li>
-                                                        <div class="item">
-                                                            <div class="img_block"><img class="height_width_80" src="img/pictures/intel_logo1.jpg" /><div class="carousel_wrapper"></div></div>
-                                                            <div class="carousel_title">
-                                                                <h4 class="featured_ico_video"><a href="#">Intel</a></h4>
-                                                                 <div class="text_alcenter"><img src="img/icons/png/rate4.png" /> <div> דירוג: 4.2 <br> <small> 428 מדרגים</small></div> </div>
-                                                            </div>
-                                                            <div class="carousel_desc">                                                
-                                                                <div class="marginr5">
-                                                                	<div class="text_alright">                                                               		                                                        
-                                                               			  מובילה עולמית בפיתוח וייצור של מיקרו מעבדים, שבבים, לוחות אם, מערכות, רכיבי תוכנה ופתרונות השבבים 
-                                                               			 המשמשים לתעשיות המחשוב והתקשורת.															 
-																	</div>  																	                                                                 	                                                          
-                                                            	</div>
-                                                            	<div> <img src="img/icons/bb.png" class="main_jobs_icon floatr marginr5"></img></div>       
-                                                                 <div class="main_jobs"> <a href="#" >  משרות באינטל  </a> </div>                                                                                                                   	 
-                                                            </div>
-                                                        </div>
-                                                    </li>                                          
-                                                    <li>
-                                                        <div class="item">
-                                                            <div class="img_block"><img class="height_width_80" src="img/pictures/apple_logo1.png" /><div class="carousel_wrapper"></div></div>
-                                                            <div class="carousel_title">
-                                                                <h4 class="featured_ico_slider"><a href="#">Apple</a></h4>
-                                                                 <div class="text_alcenter"><img src="img/icons/png/rate4.png" /> <div> דירוג: 4.2 <br> <small> 428 מדרגים</small></div> </div>
-                                                            </div>
-                                                            <div class="carousel_desc">                                                
-                                                               
-                                                                	<div class="marginr5">
-                                                                		<div class="text_alright">                                                               		                                                        
-                                                               				 מובילה עולמית בפיתוח וייצור של מיקרו מעבדים, שבבים, לוחות אם, מערכות, רכיבי תוכנה ופתרונות השבבים 
-                                                               			 המשמשים לתעשיות המחשוב והתקשורת															 
-																		</div>  																	                                                                 	                                                          
-                                                            		</div>
-                                                            		<div> <img src="img/icons/bb.png" class="main_jobs_icon floatr marginr5"></img></div>       
-                                                                 	<div class="main_jobs"> <a href="#" >  משרות באפל  </a> </div>
-                                                                               
-                                                            </div>
-                                                        </div>
-                                                    </li>  
-                                                    <li>
-                                                        <div class="item">
-                                                            <div class="img_block"><img class="height_width_80" src="img/pictures/paypal_logo1.png"/><div class="carousel_wrapper"></div></div>
-                                                            <div class="carousel_title">
-                                                                <h4 class="featured_ico_img"><a href="#">PayPal</a></h4>
-                                                                <div class="text_alcenter"><img src="img/icons/png/rate4.png" />  <div> דירוג: 4.2 <br> <small> 428 מדרגים</small></div></div>
-                                                            </div>
-                                                            <div class="carousel_desc">                                                
-                                                                <div class="marginr5">
-                                                                		<div class="text_alright">                                                               		                                                        
-                                                               				 מובילה עולמית בפיתוח וייצור של מיקרו מעבדים, שבבים, לוחות אם, מערכות, רכיבי תוכנה ופתרונות השבבים 
-                                                               			 המשמשים לתעשיות המחשוב והתקשורת															 
-																		</div>  																	                                                                 	                                                          
-                                                            		</div>
-                                                            		<div> <img src="img/icons/bb.png" class="main_jobs_icon floatr marginr5"></img></div>       
-                                                                 	<div class="main_jobs"> <a href="#" >  משרות בפייפאל  </a> </div>
-                                                            </div>
-                                                        </div>
-                                                    </li>  
-                                                    <li>
-                                                        <div class="item">
-                                                            <div class="img_block"><img class="height_width_80" src="img/pictures/google_logo1.png"/><div class="carousel_wrapper"></div></div>
-                                                            <div class="carousel_title">
-                                                                <h4 class="featured_ico_slider"><a href="#">Google</a></h4>
-                                                                <div class="text_alcenter"><img src="img/icons/png/rate4.png" /> <div> דירוג: 4.2 <br> <small> 428 מדרגים</small></div> </div>
-                                                            </div>
-                                                            <div class="carousel_desc">                                                
-                                                                <div class="marginr5">
-                                                                		<div class="text_alright">                                                               		                                                        
-                                                               				 מובילה עולמית בפיתוח וייצור של מיקרו מעבדים, שבבים, לוחות אם, מערכות, רכיבי תוכנה ופתרונות השבבים 
-                                                               			 המשמשים לתעשיות המחשוב והתקשורת															 
-																		</div>  																	                                                                 	                                                          
-                                                            		</div>
-                                                            		<div> <img src="img/icons/bb.png" class="main_jobs_icon floatr marginr5"></img></div>       
-                                                                 	<div class="main_jobs"> <a href="#" >  משרות בגוגל  </a> </div>
-                                                            </div>
-                                                        </div>
-                                                    </li>  
-                                                </ul>                        
-                                            </div>
-                                            
-                                            <div class="clear"></div>
-                                        </div><!-- .featured_slider -->
-                                    </div><!-- .module_cont -->                                    
-                                </div><!-- .row-fluid -->
-    
-                                <hr class="light">                            
-                                
-                                
-                            </div><!-- .contentarea -->
-                        </div>
-                    </div>
-                    <div class="clear"><!-- ClearFix --></div>
-                </div><!-- .fl-container -->
-                
-                <div class="clear"><!-- ClearFix --></div>
-            </div>
-        </div><!-- .container -->
-    </div><!-- .content_wrapper -->
-    <div class="pre_footer">
-    	<div class="container">
-            <aside id="footer_bar" class="row">
-            	<div class="span3">
-                   <div class="sidepanel widget_posts">
-                        <h4 class="sidebar_header">כתבות</h4>
-                        <ul class="recent_posts">
-                            <li>
-                                <div class="img_wrapper">
-                                    <img src="img/pictures/featured_widget1.jpg" width="88" height="88" class="alignleft"/>
-                                </div>
-                                <div class="recent_posts_content">
-                                    <span class="post_date">25/4/2013</span>
-                                    <p>פירוט של כתבה מאוד מעניינת! ממש שווה לקרוא</p>
-                                    <span class="read_more"><a href="#">קראו עוד...</a></span>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="img_wrapper">
-                                    <img src="img/pictures/featured_widget2.jpg" width="88" height="88" class="alignleft"/>
-                                </div>
-                                <div class="recent_posts_content">
-                                    <span class="post_date">15 april 2019</span>
-                                    <p>פירוט של כתבה מאוד מעניינת! ממש שווה לקרוא</p>
-                                    <span class="read_more"><a href="#">קראו עו...</a></span>
-                                </div>
-                            </li>
-                        </ul>
-                    </div><!-- .sidepanel -->
-                </div>
-            	<div class="span3">
-                    <div class="sidepanel widget_posts">
-                        <h4 class="sidebar_header">כתבות</h4>
-                        <ul class="recent_posts">
-                            <li>
-                                <div class="img_wrapper">
-                                    <img src="img/pictures/featured_widget1.jpg" width="88" height="88" class="alignleft"/>
-                                </div>
-                                <div class="recent_posts_content">
-                                    <span class="post_date">25/4/2013</span>
-                                    <p>פירוט של כתבה מאוד מעניינת! ממש שווה לקרוא</p>
-                                    <span class="read_more"><a href="#">קראו עוד...</a></span>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="img_wrapper">
-                                    <img src="img/pictures/featured_widget2.jpg" width="88" height="88" class="alignleft"/>
-                                </div>
-                                <div class="recent_posts_content">
-                                    <span class="post_date">15 april 2019</span>
-                                    <p>פירוט של כתבה מאוד מעניינת! ממש שווה לקרוא</p>
-                                    <span class="read_more"><a href="#">קראו עו...</a></span>
-                                </div>
-                            </li>
-                        </ul>
-                    </div><!-- .sidepanel -->
-                </div>
-            	<div class="span3">
-                    <div class="sidepanel widget_posts">
-                        <h4 class="sidebar_header">כתבות</h4>
-                        <ul class="recent_posts">
-                            <li>
-                                <div class="img_wrapper">
-                                    <img src="img/pictures/featured_widget1.jpg" width="88" height="88" class="alignleft"/>
-                                </div>
-                                <div class="recent_posts_content">
-                                    <span class="post_date">25/4/2013</span>
-                                    <p>פירוט של כתבה מאוד מעניינת! ממש שווה לקרוא</p>
-                                    <span class="read_more"><a href="#">קראו עוד...</a></span>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="img_wrapper">
-                                    <img src="img/pictures/featured_widget2.jpg" width="88" height="88" class="alignleft"/>
-                                </div>
-                                <div class="recent_posts_content">
-                                    <span class="post_date">15 april 2019</span>
-                                    <p>פירוט של כתבה מאוד מעניינת! ממש שווה לקרוא</p>
-                                    <span class="read_more"><a href="#">קראו עו...</a></span>
-                                </div>
-                            </li>
-                        </ul>
-                    </div><!-- .sidepanel -->
-                </div>            	
-            </aside>
-        </div>
-    </div>
-    <footer>
-    	<div class="footer_wrapper container">           
-            <nav>
-                <ul class="menu">
-                    <li class="current-menu-parent"><a href="index-2.html">Home</a></li>
-                    <li><a href="about.html">עלינו</a></li>
-                    <li><a href="typography.html">תנאי שימוש</a></li>
-                    <li><a href="portfolio1.html"></a>פרטיות</li>
-                    <li><a href="blog_full.html"></a>צור קשר</li>
-                    <li><a href="contact_full.html"></a>פרסמו אצלנו</li>                
-                </ul><!-- .menu -->
-            </nav>       
-            <div class="footer_tools">
-                    
-            	<div class="footer_search">
-                    <form name="search_form" method="get" action="#" class="search_form">
-                        <input type="submit" name="submit_search" value="" title="" class="btn_search">
-                        <input type="text" name="search_field" value="חיפוש באתר..." title="חיפוש באתר..." class="field_search">                        
-                    </form>                
-                </div>
-                <div class="clear"></div>                
+    <!-- container -->
+
+    <div class="container">
+        <div class="row">
+            <div class="twelve columns">
+                <h1>Favorite Quotes from Bitbuckaneers 2013</h1>
+
+                <p>This page lists the favorite quotes from any Bitbuckaneer that cares to contribute. This is a family-oriented site, so only post stuff you are comfortable showing to your family. If your family is seriously abnormal, my condolences and I'm going to reject your sadly twisted pull request.</p>
+
+                <p>After a year of being a live tutorial, the list of quotes got really, really long. So, I've <a href="yearone.html">archived the year one stuff to this page</a>. This is a whole new year! Let's make it as good as the last.</p> 
             </div>
         </div>
-	</footer>
-</body>
-</html>
+
+        <div class="row">
+            <div class="twelve columns">
+                <!-- Quotes Table Start -->
+
+
+
+                <table>
+                    <tbody>
+<tr>
+
+<td>
+    <blockquote>QUOTE_YOU_WANT_TO_ADD</blockquote>
+</td>
+</tr>                    
+<tr>
+<td>
+    <img src="data:image/jpg;base64,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">
+</td>
+<td>
+    <blockquote>Nobody cares what I say.</blockquote>
+</td>
+</tr>					
+<tr>                    
+ <tr>
+<td>
+    <img src="data:image/jpg;base64,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">
+</td>
+<td>
+    <blockquote>Nobody cares what I say.</blockquote>
+</td>
+</tr>					
+<tr>
+                            <td>
+                                <img src="images/vangogh.jpg" alt="Vincent Van Gogh"/>
+                            </td>
+                            <td>
+                                <blockquote>There may be a great fire in our hearts, yet no one ever comes to warm himself at it, and the passers-by see only a wisp of smoke. (Vincent Van Gogh)</blockquote>
+                            </td>
+                        </tr>
+
+<tr>
+<td>
+    <img src="http://www.ifc.com/wp-content/uploads/2011/09/lucille-bluth-arrested-development-ifc-jessica-walter.jpg"/>
+</td>
+<td>
+    <blockquote> I don’t understand the question, and I won’t respond to it.</blockquote>
+</td>
+</tr>                    		
+                    <tr>
+<td>
+    <img src="http://addicted2success.com/wp-content/uploads/2013/04/Famous-Success-Quotes1-300x330.jpg">
+</td>
+<td>
+    <blockquote>If you don’t build your dream, someone else will hire you to help them build theirs.</blockquote>
+</td>
+</tr>	
+<tr>
+<td>
+    <img src="http://www.sample.com/image.gif"/>
+</td>
+<td>
+    <blockquote>b164 i'm here</blockquote>
+</td>
+</tr>	
+<tr>
+<td>
+    <img src="http://images4.wikia.nocookie.net/__cb20060508090314/lotr/images/4/45/Samwise2.jpg"/>
+</td>
+<td>
+    <blockquote>"Po-ta-toes! Boil em', mash em', stick em' in a stew!" - Samwise Gamgee </blockquote>
+</td>
+</tr>
+                   <tr>
+<td>
+    <img src="http://www.crazyzoo.tv/wp-content/uploads/2013/05/F.jpg"/>
+</td>
+<td>
+    <blockquote>It's so fluffy i'm gonna die!-Definitely a change</blockquote>
+</td>
+</tr>   
+<!---->
+<tr>
+                            <td>
+                                <img src="https://si0.twimg.com/profile_images/2142086493/universe.jpg" alt="universe"/>
+                            </td>
+                            <td>
+                                <blockquote>Two things are infinite: the universe and human stupidity; and I'm not sure about the universe. </blockquote>
+                            </td>
+</tr>
+<!---->
+<tr>
+<td>
+    <img src="http://www.rionegro.com.ar/diario/funciones/binario/imagen.aspx?idart=992397&idcat=9544&idcon=3177059&resolucion=0&tipo=2"/>
+</td>
+<td>
+    <blockquote>Tres empanadas para dos, qué miseria este país...</blockquote>
+</td>
+</tr>
+<tr><td>No picture</td><td>Yo!</td></tr>
+<tr>
+<td>
+    <img src="http://www.jucoolimages.com/images/quotes/quotes_18.gif"/>
+</td>
+<td>
+    <blockquote>Live as if you were to die tomorrow, Learn as if you were to live forever...</blockquote>
+</td>
+</tr>
+
+                            <td><img src="http://l.yimg.com/ck/image/A1370/1370772/300_1370772.jpg"></td>
+
+                            <td>
+                                <blockquote>
+"I love the office Halloween party; it is so much sluttier than the office Christmas Party though not as freaky as the office Presidents Day rave."
+<p>-Barney Stinson
+</blockquote>
+                            </td>
+                        </tr><tr>
+    <td><img src="http://en.wikipedia.org/wiki/File:Aristotle_Altemps_Inv8575.jpg"></td>
+    <td><blockquote>"We are what we repeatedly do. Excellence, then, is not an act, but a habit." - Aristotle</blockquote></td>
+</tr>
+
+<tr>
+                            <td>
+                                <blockquote>
+                                    Ah, the ID 10T problem.  Back on our heads.
+
+                                    <footer style="text-align:right; font-weight:bold;">Andy Myles</footer>
+                                </blockquote>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td><img src="http://www.socialnomics.net/wp-content/uploads/2012/11/Screen-Shot-2012-12-06-at-2.14.27-PM.pngg&quot;/"></td>
+
+</td>
+</tr>
+<tr>
+    <td>
+        <img src="http://www.flickr.com/photos/sthomasphotos/8005786760/"/>
+    </td>
+    <td>
+        <blockquote>The way to get stated is to quit talking and begin doing. - Walt Disney</blockquote>
+    </td>
+</tr>
+<tr>
+<td>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/9/9c/Oscar_Wilde_portrait.jpg"/>
+</td>
+<td>
+    <blockquote> Work is the curse of the drinking classes. </blockquote>
+</td>
+</tr>
+
+                    <tr>
+                        <td><img src="http://www.baseballinwartime.com/images/berra_yogi1.jpg"></td>
+
+                        <td>
+                            <blockquote>
+                                "I don't want to make the wrong mistake."
+
+                                <footer>Yogi Berra</footer>
+                            </blockquote>
+                        </td>
+                    </tr><!-- Jelena, June 13 2013 -->
+
+“We have invented happiness,” say the last men, and they blink.<br></blockquote>
+</td>
+</tr>
+<tr>
+  <td>
+    <img src="http://www.lexido.com/Portals/0/700nietzsche-friedrich.jpg">
+<td>
+  <blockquote>“What is love? What is creation? What is longing? What is a star?” Thus asks the last man, and he blinks.<br>
+
+The earth has become small, and on it hops the last man, who makes everything small. His race is as ineradicable as the flea-beetle; the last man lives longest.<br>
+
+“We have invented happiness,” say the last men, and they blink. They have left the regions where it was hard to live, for one needs warmth. One still loves one’s neighbor and rubs against him, for one needs warmth.<br>
+
+Becoming sick and harboring suspicion are sinful to them: one proceeds carefully. A fool, whoever still stumbles over stones or human beings! A little poison now and then: that makes for agreeable dreams. And much poison in the end, for an agreeable death.<br>
+
+One still works, for work is a form of entertainment. But one is careful lest the entertainment be too harrowing. One no longer becomes poor or rich: both require too much exertion. Who still wants to rule? Who obey? Both require too much exertion.<br>
+
+No shepherd and one herd! Everybody wants the same, everybody is the same: whoever feels different goes voluntarily into a madhouse.<br>
+
+“Formerly all the world was mad,” say the most refined, and they blink.<br>
+
+One is clever and knows everything that has ever happened: so there is no end of derision. One still quarrels, but one is soon reconciled—else it might spoil the digestion.<br>
+
+One has one’s little pleasure for the day and one’s little pleasure for the night: but one has a regard for health.<br>
+<tr>
+<td>
+    <img src="http://www.sample.com/image.gif"/>
+</td>
+<td>
+    <blockquote>QUOTE_YOU_WANT_TO_ADD</blockquote>
+</td>
+</tr>
+</td>
+<td>
+    <blockquote>It is better to Burn out than to Fade away.</blockquote>
+</td>
+</tr>
+
+<tr>
+
+<td>
+    <img src="http://www1.pidel.org/wp-content/themes/zenon-lite/images/slide4.jpg"/>
+</td>
+<td>
+    <blockquote>MarTuhan, Marroha, Marbisuk</blockquote>
+</td>
+</tr>    <!-- Dahlan Faroga Sirait, 2013-06-17 -->
+
+<td>
+    <blockquote> evernote is sometimes freaky but quite awesome other times </blockquote>
+</td>
+</tr>
+
+<tr>
+    <td>
+        <img src="images/brasil.jpg" title="Sociedade" alt="Sociedade"/>
+    </td>
+    <td>
+        <blockquote>
+            "Todas as flores do futuro estão nas sementes de hoje."
+        </blockquote>
+    </td>
+</tr>
